@@ -9,7 +9,7 @@ interface CharacterCardProps {
 const CharacterCard: FC<CharacterCardProps> = ({character}) => {
     return (
         <Link to={`/character/${character.id}`} className='m-2'>
-            <img src={`${character.image}`}/>
+            <img src={`${character.image}`} alt={`${character.name}`}/>
         </Link>
     );
 };
